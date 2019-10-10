@@ -28,7 +28,7 @@ zipped_array.each do |element|
 end
   
   puts array_of_hashes
-
+return array_of_hashes
 end
 
 crypto_scrapper

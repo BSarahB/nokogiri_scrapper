@@ -9,7 +9,7 @@ def get_congres_email
   deputes_emails = []
   n = 0
   576.times do #576 est array_list.urls.length
-    page = Nokogiri::HTML(open(array_list_urls[n]))# ouverture d'une nouvelle page pour chaque élément du tableau
+    page = Nokogiri::HTML(open(array_list_urls[n]))
     deputes_emails << page.xpath("//*[@id='haut-contenu-page']/article/div[3]/div/dl/dd[4]/ul/li[2]/a/text()")
     n = n+1
   end
